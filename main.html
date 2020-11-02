@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin And Counter</title>
+
+    <link rel="stylesheet" href="mystyle.css">
+
+</head>
+
+<body>
+    <div class="grid center">
+        <button type="button" id="hourUp" name="hour" onclick="up(this.name)"> + </button>
+        <button type="button" id="minuteUp" name="minute" onclick="up(this.name)"> + </button>
+        <button type="button" id="secondUp" name="second" onclick="up(this.name)"> + </button>
+        <div class="grid2">
+            <div id="hour">h</div>
+            <div style="text-align: left;">h</div>
+        </div>
+        <div class="grid2">
+            <div id="minute">m</div>
+            <div style="text-align: left;">m</div>
+        </div>
+        <div class="grid2">
+            <div id="second">s</div>
+            <div style="text-align: left;">s</div>
+        </div>
+        <button type="button" id="hourDown" name="hour" onclick="down(this.name)"> - </button>
+        <button type="button" id="minuteDown" name="minute" onclick="down(this.name)"> - </button>
+        <button type="button" id="secondDown" name="second" onclick="down(this.name)"> - </button>
+    </div>
+
+    <div class="gridRow center20">
+        <div class="grid" style="grid-template-columns: auto 160px auto; margin: 10px;">
+            <div>USD</div>
+            <div id="usd">1</div>
+            <img src="./img/dollar.svg" alt="usd" width="35" height="35">
+        </div>
+        <div class="grid" style="grid-template-columns: auto 160px auto; margin: 10px;">
+
+            <div>GBP</div>
+            <div id="gbp">1</div>
+            <img src="./img/pound.svg" alt="gbp" width="30" height="30">
+        </div>
+        <div class="grid" style="grid-template-columns: auto 160px auto; margin: 10px;">
+            <div>EUR</div>
+
+            <div id="eur">1</div>
+            <img src="./img/euro.svg" alt="eur" width="30" height="30">
+
+        </div>
+
+    </div>
+
+    <script src="counter.js"></script>
+    <script src="bitcoin.js"></script>
+
+</body>
+
+</html>
